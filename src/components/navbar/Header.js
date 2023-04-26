@@ -3,8 +3,8 @@ import { NavLink, useLocation } from "react-router-dom";
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import gfg from "../../gfgblack.svg";
-import GfgIcon from "../icons/GfgIcon";
-import LeetcodeIcon from "../icons/LeetcodeIcon";
+// import GfgIcon from "../icons/GfgIcon";
+// import LeetcodeIcon from "../icons/LeetcodeIcon";
 // import { faGitHub } from '@fortawesome/free-brands-svg-icons'
 import { FaGithub, FaGoogle, FaLinkedin, FaTiktok } from "react-icons/fa";
 import "./Header.css";
@@ -13,7 +13,7 @@ import "./Header.css";
 const Header = () => {
   const [isWhite, setIsWhite] = useState(false);
   const changeColor = () => {
-    if (window.scrollY >= 270) {
+    if (window.scrollY >= 100) {
       setIsWhite(true);
     } else {
       setIsWhite(false);
@@ -53,14 +53,14 @@ const Header = () => {
         <li>
           <FaLinkedin />
         </li>
-        <li>
+        {/* <li>
           <LeetcodeIcon className="leetcode-icon" />
         </li>
         <li>
           {/* <img src={gfg} className="gfg-icon"></img> */}
-          <GfgIcon className="gfg-icon" />
-        </li>
-
+        {/* <GfgIcon className="gfg-icon" /> */}
+        {/* </li> */}
+        {/*  */}
         {/* <li><FontAwesomeIcon icon={faGoogleLogo} /></li>
                 <li><FontAwesomeIcon icon={faLinkedIn} /></li> */}
         {/* <li><FontAwesomeIcon icon="fa-regular fa-coffee" /></li> */}

@@ -14,7 +14,7 @@ const Footer = () => {
                     <li><FaGithub /></li>
                     <li><FaGoogle /></li>
                     <li><FaLinkedin /></li>
-                    <li><FaTiktok /></li>
+                    {/* <li><FaTiktok /></li> */}
                 </ul>
             </div>
         </>
