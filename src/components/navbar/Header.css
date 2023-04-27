@@ -1,4 +1,4 @@
-.nav {
+.navbar-css {
   position: fixed;
   display: flex;
   flex-wrap: inherit;
@@ -10,7 +10,7 @@
   transition: all 0.8s cubic-bezier(0.76, 0.49, 0.11, 1.11);
 }
 
-.nav-background {
+.navbar-css-background {
   position: fixed;
   color: black;
   display: flex;
@@ -23,15 +23,25 @@
   transition: all 0.8s cubic-bezier(0.76, 0.49, 0.11, 1.11);
 }
 
-.nav-background .nav-link {
+.navbar-css .a-style {
+  color: white;
+}
+
+.navbar-css-background .a-style {
+  color: black;
+}
+
+.navbar-css-background .navbar-css-link {
   font-size: 30px;
   /* margin-left: 0; */
   text-decoration: none;
-  color: black;
+  color: black !important;
   transition: all 0.8s cubic-bezier(0.76, 0.49, 0.11, 1.11);
 }
 
-.nav-background > .navbar-navlist > a.navbar-navlist.ml-0 {
+.navbar-css-background
+  > .navbar-css-navlist
+  > a.navbar-css-navlist.margin-left-0 {
   /* font-size: 30px; */
   /* margin-left: 0; */
   text-decoration: none;
@@ -39,29 +49,30 @@
   transition: all 0.8s cubic-bezier(0.76, 0.49, 0.11, 1.11);
 }
 
-.ml-0 {
+.margin-left-0 {
   margin-left: 0px !important;
 }
-.nav > a {
+.navbar-css > a {
   font-size: 30px;
 }
-.nav .navbar-navlist {
+.navbar-css .navbar-css-navlist {
   color: white;
 }
 
-a {
+.a-style {
   margin-left: 15vw;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: 1px;
   font-family: "Nunito", sans-serif;
+  text-decoration: none;
 }
 
 ul > * {
   list-style: none;
 }
 
-.navbar-navlist {
+.navbar-css-navlist {
   display: flex;
   align-items: center;
   margin-left: 35vw;
@@ -72,51 +83,34 @@ ul > * {
   line-height: 24px;
   font-family: "Nunito", sans-serif;
   text-decoration: none;
+  margin-top: 18px;
 }
 
-.navbar-navlist li:hover {
+.navbar-css-navlist li:hover {
   color: #ff7c00;
 }
 
-.navbar-social {
+.navbar-css-social {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  /* margin-top: 40px; */
+  margin-top: 30px;
 }
-.navbar-social li:hover {
+.navbar-css-social li:hover {
   color: #0442ac;
 }
 
-.navbar-background li:hover {
+.navbar-css-background li:hover {
   color: #0442ac;
 }
 
-.gfg-icon {
-  width: 27px;
-  height: 22px;
-  margin-bottom: 20px;
-}
-
-.leetcode-icon {
-  width: 27px;
-  height: 18px;
-  margin-bottom: 10px;
-}
-
-.gfg-icon .leetcode-icon:hover {
-  width: 27px;
-  height: 22px;
-  /* filter:; */
-}
-
-.nav-link {
+.navbar-css-link {
   color: white;
   text-decoration: none;
   /* margin-right: 20px; */
 }
 
-.nav-link-active {
+.navbar-css-link-active {
   color: white;
   text-decoration: none;
 }

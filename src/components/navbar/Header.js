@@ -25,25 +25,29 @@ const Header = () => {
   window.addEventListener("scroll", changeColor);
 
   return (
-    <div className={isWhite ? "nav-background" : "nav"}>
-      <NavLink to="/" className="nav-link" activeClassName="nav-link-active">
-        <a className="ml-0">Portfolio</a>
+    <div className={isWhite ? "navbar-css-background" : "navbar-css"}>
+      <NavLink
+        to="/"
+        className="navbar-css-link"
+        activeClassName="navbar-css-link-active"
+      >
+        <a className=" a-style">Portfolio</a>
       </NavLink>
-      <ul className="navbar-navlist">
-        <NavLink to="/" className="navbar-navlist ml-0">
+      <ul className="navbar-css-navlist">
+        <NavLink to="/" className="navbar-css-navlist margin-left-0">
           <li>HOME</li>
         </NavLink>
-        <NavLink to="/about" className="navbar-navlist ml-0">
+        <NavLink to="/about" className="navbar-css-navlist margin-left-0">
           <li>ABOUT ME</li>
         </NavLink>
-        <NavLink to="/portfolio" className="navbar-navlist ml-0">
+        <NavLink to="/portfolio" className="navbar-css-navlist margin-left-0">
           <li>PORTFOLIO</li>
         </NavLink>
-        <NavLink to="/contact" className="navbar-navlist ml-0">
+        <NavLink to="/contact" className="navbar-css-navlist margin-left-0">
           <li>CONTACT ME</li>
         </NavLink>
       </ul>
-      <ul className="navbar-social">
+      <ul className="navbar-css-social">
         <li>
           <FaGithub />
         </li>
